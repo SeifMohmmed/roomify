@@ -1,4 +1,5 @@
 import type { Route } from "./+types/home";
+import Navbar from "../../componets/Navbar";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -9,8 +10,11 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Home() {
   return (
-      <div className="text-3xl text-indigo-500 font-bold">
+      <div className="home-page">
+      <Navbar />
+      <h1 className="text-3xl text-indigo-500 font-bold">
         Home
+      </h1>
       </div>
   )
 }
