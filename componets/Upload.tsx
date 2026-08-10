@@ -78,7 +78,7 @@ const Upload = ({ onComplete }: UploadProps) => {
             setError("Unsupported file type. Please upload a JPG or PNG image.");
             return;
         }
-//asd
+
         if (selectedFile.size > MAX_FILE_SIZE_BYTES) {
             setError("File is too large. Maximum file size is 10 MB.");
             return;
